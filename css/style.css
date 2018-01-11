@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background: #f5f5fb;
+}
+
+.container {
+    max-width: 32.188em;
+    height: auto;
+    background: #ffffff;
+    margin: 5em auto;
+}
+
+.form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3.750em 4.375em 3em 4.375em;
+    color: #696D8C;
+    font-family: 'Nunito Sans', 'Oxygen', 'Arial', sans-serif;
+    font-size: 1em;
+    line-height: 1.625em;
+    font-weight: bold;
+}
+
+.olist-logo { 
+    fill: #0C29D0;
+    width: 5.500em;
+}
+
+.form h2 {
+    color: #312F4F;
+    font-size: 1.375em;
+    line-height: 1.938em;
+    margin: 0.750em 0;
+}
+
+.userInputs {
+    padding: 0.750em 0;
+}
+
+input[type=text], 
+input[type=password] {
+    width: 100%;
+    height: 2.750em;
+    border: solid #B6B9D0 1px;
+    padding-left: 0.5em;
+    box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+input[type=submit] {
+    width: 100%;
+    height: 3.250em;
+    color: #ffffff;
+    background-color: #33d59a;
+    font-size: 1.125em;
+    line-height: 1.875em;
+    font-family: 'Nunito Sans', 'Oxygen', sans-serif;
+    font-weight: bold;
+    border-style: none;
+}
+
+.borderGreen input[type=password] {
+    border: solid #1FE6A8 1px;
+}
+
+.borderYellow input[type=password] {
+    border: solid #F7BC1C 1px;
+}
+
+.borderRed input[type=password] {
+    border: solid #F79682 1px;
+}
+
+.passwordProgBar {
+    padding: 0 0 1em 0;
+}
+
+.passwordRule {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.passwordRule p {
+    padding-left: 0.5em;
+    font-size: 1em;
+    line-height: 1.625em;
+    margin: 0;
+}
+
+.passwordEmpty {
+    fill: #EAEAF4;
+}
+
+.passwordGood {
+    fill: #1FE6A8;
+}
+
+.passwordNotGood {
+    fill: #F7BC1C;
+}
+
+.passwordBad {
+    fill: #F79682;
+}
+
+.button {
+    padding-top: 1.250em;
+}
+
+@media screen and (max-width: 32.187em) {
+    body {
+        background: #ffffff;
+    }
+    .container {
+        margin: 0 auto;
+    }
+    .passwordProgBar {
+        display: none;
+    }
+    .passwordRules {
+        padding-top: 1em; 
+    }
+}
